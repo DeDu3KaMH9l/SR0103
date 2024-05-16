@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CR" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">
+            @color/DarkGreen
+        </item>
+    </style>
+    <style name="Theme.CR" parent="Base.Theme.CR" />
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/pingvin</item>
+        <item name="windowSplashScreenAnimationDuration">28000</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.CR</item>
+    </style>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/Bej">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Авторизация"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/log_text"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height= "48dp"
+        android:id="@+id/log_email"
+        android:layout_marginTop="30dp"
+        android:hint="Введите свой Email"
+        android:layout_below="@+id/log_text"
+        android:background="@drawable/color_text_view"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/log_pwd"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/log_email"
+        android:hint="Введите свой пароль"
+        android:background="@drawable/color_text_view"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_pwd"
+        android:layout_alignEnd="@+id/log_pwd"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="@color/Orange"
+        android:gravity="center"
+        android:text="Авторизоваться" />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignStart="@+id/btn_login"
+        android:layout_alignEnd="@+id/btn_login"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/Orange"
+        android:gravity="center"
+        android:text="Нет аккаунта?" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_alignStart="@+id/btn_register"
+        android:layout_alignEnd="@+id/btn_register"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/Orange"
+        android:gravity="center"
+        android:onClick="showDialog"
+        android:text="Помощь" />
+</RelativeLayout>
